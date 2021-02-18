@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<!-- Project 2c -->
+<!--
+1. Make the font size 20 points.
+2. Make the left margin 50 pixels.
+3. Add the following elements to the page:
+ - level 1 header. The content shall be your name.
+ - image. The picture displayed shall be anything of your choice on the web. Use an absolute/remote URL.
+ - ordered list with two items. The content of these items shall be your two favorite things.
+4.Write a JS script that does the following:
+- Ask the user for his two favorite things. Print a new ordered list with the the inputted values.
+- Ask the user if he likes Google. If so, print an image of the Google logo.-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Project2c</title>
+
+    <style>
+      .greenMove { color: red;
+                   position: relative;
+                   bottom: -15pt;
+                   left: 50px;
+                   font-size: 20pt; }
+    </style>
+
+  </head>
+  <body class="greenMove">
+    <h1>Yanming Yu</h1>
+    <ol>
+      <li>stuff</li>
+      <li>More stuff</li>
+    </ol>
+
+    <p>
+			<a>
+				<img src = "https://api.time.com/wp-content/uploads/2014/11/potato.jpg?w=800&quality=85" alt = "Potato">
+			</a>
+		</p>
+
+    <script type="text/javascript">
+
+      function makeDamnList(){
+        var favThing1, favThing2;
+  
+        favThing1 = window.prompt("What is one of your favorite things?");
+  
+        favThing2 = window.prompt("What is another one of your favorite things?");
+  
+        var favList = [favThing1, favThing2];
+  
+        var x = document.createElement("OL");
+        x.setAttribute("id", "myOl");
+        document.body.appendChild(x);
+  
+  
+        for (let i = 0; i < favList.length; i++) {
+          var y = document.createElement("LI");
+          var t = document.createTextNode(favList[i]);
+          y.appendChild(t);
+          document.getElementById("myOl").appendChild(y);
+          
+        }
+  
+      }
+  
+      function likeGoogle(){
+      
+        var answer;
+        var picture = document.createElement("img");
+  
+        picture.src = "https://azbigmedia.com/wp-content/uploads/2010/10/google1.jpg";
+  
+        answer = window.prompt("Do you like Google?(yes/no)");
+  
+        if (answer == "yes") {
+            document.body.appendChild(picture);
+          };
+      }
+  
+      likeGoogle();
+  
+      makeDamnList();
+    </script>
+
+  </body>
+
+</html>

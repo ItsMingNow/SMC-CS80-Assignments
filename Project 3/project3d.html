@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .table {
+            /* display: inline-block; */
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        table, td {
+            border: 1px solid #333;}
+            thead, tfoot {
+            background-color: #333;
+            /* color: #fff; */
+        }
+        td, th {
+            width: 4rem;
+            height: 2rem;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+        th {
+            background: lightblue;
+            border-color: white;
+        }
+        body {
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <table class="table">
+        <thead>
+            <th>A</th>
+            <th>B</th>
+        </thead>
+        
+        <tbody id="container">
+            <tr>
+                <td>Rent</td>
+                <td><input id="rent" type="number" oninput="validateNumber(this)" onblur="calcTotal()" value="0"></td>
+            </tr>
+            <tr>
+                <td>Food</td>
+                <td><input id="food" type="number" oninput="validateNumber(this)" onblur="calcTotal()" value="0"></td>
+            </tr>
+            <tr>
+                <td>Entertainment</td>
+                <td><input id="ent" type="number" oninput="validateNumber(this)" onblur="calcTotal()" value="0"></td>
+            </tr>
+            <tr>
+                <td>Transportation</td>
+                <td><input id="tran" type="number" oninput="validateNumber(this)" onblur="calcTotal()" value="0"></td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td><input id="total" type="number" value="0"></td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        function isFloat(n) {
+            return Number(n) === n&& n % 1 !== 0;
+        }
+
+        function calcTotal() {
+            var rent = document.getElementById('rent').value;
+            var food = document.getElementById('food').value;
+            var ent = document.getElementById('ent').value;
+            var tran = document.getElementById('tran').value;
+            var total = document.getElementById('total');
+            var sum;
+
+            sum = parseFloat(rent) + parseFloat(food) + parseFloat(ent) + parseFloat(tran);
+            total.value = sum.toFixed(2);
+        }
+
+        function whatIs(thing) {
+            console.log(thing);
+        }
+
+        var validNumber = new RegExp(/^[0-9]*(\.[0-9]{0,2})?$/);
+        var lastValid = 0;
+        function validateNumber(elem) {
+            if (validNumber.test(elem.value)) {
+                lastValid = elem.value;
+            } else {
+                elem.value = lastValid;
+            }
+        }
+
+    </script>
+</body>
+</html>

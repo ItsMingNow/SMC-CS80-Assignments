@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<!-- Assignment 4.4 -->
+<!-- Write a CSS rule that places a background image halfway down the page, tiling it horizon- tally.
+The image should remain in place when the user scrolls up or down. -->
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>Picture Positioning</title>
+    <style type = "text/css">
+      .background_image { position: absolute;
+                    top: 250px;
+                    transform: rotate(90deg); }
+      body { background-image: url(camel.png);
+             background-color: lightgray;
+             background-position: top right;
+             background-repeat: no-repeat; }
+    </style>
+	</head>
+
+	<body>
+		<p>
+      <img src = "camel.png" class = "background_image" alt = "Casey the Damn Camal image">
+    </p>
+	</body>
+</html>

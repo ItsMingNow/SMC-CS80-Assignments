@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<!-- Assignment 7.12 -->
+<!-- Develop a script that will determine whether a department-store customer
+has exceeded the credit limit on a charge account. For each customer, the
+following facts are available:
+a) Account number
+b) Balance at the beginning of the month
+c) Total of all items charged by this customer this month
+d) Total of all credits applied to this customer's account this month
+e) Allowed credit limit
+The script should input each of these facts from a prompt dialog as an integer,
+calculate the new balance (= beginning balance + charges - credits), display the
+new balance and determine whether the new balance exceeds the customer's credit
+limit. For customers whose credit limit is exceeded, the script should output
+HTML5 text that displays the message "Credit limit exceeded." -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gas</title>
+    <script type="text/javascript">
+
+      while (true)
+      {
+        var accNumber, balMonth, totalItemMonth, totalCreditMonth, creditAllowed;
+        var newBalance;
+
+        accNumber = window.prompt("Type in your account number: ");
+
+        balMonth = window.prompt("Balance at beginning of the month: ");
+
+        totalItemMonth = window.prompt("New charges this month: ");
+
+        totalCreditMonth = window.prompt("Credit applied this month: ");
+
+        creditAllowed = window.prompt("Credit limit: ");
+
+        balMonth = parseInt(balMonth);
+        totalItemMonth = parseInt(totalItemMonth);
+        totalCreditMonth = parseInt(totalCreditMonth);
+        creditAllowed = parseInt(creditAllowed);
+
+        newBalance = balMonth + totalItemMonth - totalCreditMonth;
+
+        newBalance = parseInt(newBalance);
+
+        window.alert("Your current balance is $" + newBalance + "\n");
+
+        if (newBalance > creditAllowed) {
+          window.alert("Credit limit exceeded! Stop making bad decisions!")
+        };
+      };
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

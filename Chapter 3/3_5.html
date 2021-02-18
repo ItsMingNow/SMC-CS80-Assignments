@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<!-- Assignment 3.5 -->
+<!-- Damn Survey -->
+<html>
+  <head>
+    <meta charset = "utf-8">
+		<title> Survey Yay!	</title>
+	</head>
+
+	<body>
+    <form method="post" autocomplete="off">
+  		<p><!-- Meter -->
+        <label>Meter:
+        0 <meter min = "0" max = "10" value="7"></meter> 10
+        </label>
+      </p>
+
+      <p><!-- Survey Results -->
+        <details>
+          <summary>Survey Results</summary>
+          Students were asked to rate the food in the cafeteria on a scale of 1 to 10. <mark>The average result was 7.</mark>
+        </details>
+      </p>
+
+      <p><!-- Name -->
+  			<input name = "name" type = "text" id="firstName" placeholder = "First Name" size = "25" maxlength = "30">
+      </p>
+
+      <p><!-- Auto Fill States -->
+        <label for = "txtList">State:
+          <input type = "text" id = "txtList" placeholder = "Select a State" list = "States"/>
+          <datalist id = "States">
+            <option value="California">
+            <option value="New Jersey">
+            <option value="New York">
+            <option value="Florida">
+            <option value="Hawaii">
+          </datalist>
+        </label>
+  		</p>
+
+      <p>
+        <label>Range:
+        1 <input type = "range" min = "1" max = "100" value "50" /> 100
+        </label>
+      </p>
+	</body>
+</html>

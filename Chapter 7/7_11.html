@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<!-- Assignment 7.11 -->
+<!-- Drivers are concerned with the mileage obtained by their automobiles.
+One driver has kept track of several tankfuls of gasoline (you need to prompt
+for the number of tankfuls) by recording the number of miles driven and the
+number of gallons used for each tankful. Develop a script that will take as
+input the miles driven and gallons used (both as integers) for each tankful.
+The script should calculate and output HTML5 text that displays the number of
+miles per gallon obtained for each tankful and prints the combined number of
+miles per gallons obtained for all tankfuls up to this point. Use prompt dialogs
+to obtain the data from the user. -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Math Sh*t</title>
+    <script type="text/javascript">
+
+      var milesDriven;
+      var gallonsGas;
+      var number1, number2, number3;
+      var tankUsed;
+      var mpg;
+      var wtf;
+
+      milesDriven = window.prompt("Enter miles driven: ");
+
+      gallonsGas = window.prompt("Enter gallons of gasoline for full tank: ");
+
+      tankUsed = window.prompt("How many full tanks of gaoline have you used: ")
+
+      number1 = parseInt( milesDriven);
+      number2 = parseInt( gallonsGas);
+      number3 = parseInt( tankUsed);
+
+      mpg = number1 / (number3 * number2);
+
+      wtf = mpg * (number3 * number2);
+
+      document.write("Your MPG: " + mpg);
+
+      document.write("\nYour total miles driven: " + wtf);
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

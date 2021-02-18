@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Arguing with your Friends at Restaurants</title>
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+        body {
+            font-weight: 700;
+            text-align: center;
+            color:#343434;
+            background: #4EA699;
+            margin: 0;
+            padding: 0;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 2em;
+            line-height: 2;
+        }
+        .btn {
+            color: #343434;
+            background: #FFFACC;
+            padding: .5em;
+            margin: 0;
+            border-radius: 4px;
+            display: inline-block;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: .5em;
+        }
+    </style>
+    <script>
+        var cost, tip, sum;
+
+        // Gives just the tip
+        var justTheTip = function calcTip() {
+
+            cost = document.getElementById("original_cost").value;
+
+            tip = document.getElementById("tip_rate").value;
+
+            sum = cost * (tip/100);
+
+            document.getElementById("sum").innerHTML = "Just the tip: " + sum;
+        
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <h1>What is the DAMN Tip?!</h1>
+    </header>
+    <label>
+        Original Cost:
+        <input type="number" id="original_cost" class="btn">
+    </label>    
+    <label>
+        Tip Rate:
+        <input type="number" id="tip_rate" class="btn">
+    </label>
+    <input type="button" onclick="justTheTip();" value="Calculate" class="btn">
+    <div id="sum"></div>
+</body>
+</html>

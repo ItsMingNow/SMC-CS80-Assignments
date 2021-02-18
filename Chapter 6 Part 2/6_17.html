@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<!-- Assignment 6.17 -->
+<!-- Write a script that asks the user to enter two integers, obtains the
+numbers from the user and outputs text that displays the larger number followed
+by the words “is larger” in an alert dialog. If the numbers are equal, output
+HTML5 text that displays the message “These numbers are equal.” -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Math Sh*t</title>
+    <script type="text/javascript">
+
+      var firstNumber;
+      var secondNumber;
+      var number1, number2;
+
+      firstNumber = window.prompt("Enter first number");
+
+      secondNumber = window.prompt("Enter second number");
+      number1 = parseInt( firstNumber);
+      number2 = parseInt( secondNumber);
+
+      if (number1 > number2)
+      {
+        window.alert(number1 + " is larger");
+      };
+      if (number1 < number2)
+      {
+        window.alert(number2 + " is larger");
+      };
+      if (number1 == number2)
+      {
+        window.alert(" These numbers be equal");
+      };
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

@@ -1,0 +1,37 @@
+
+
+.audioPlayer {
+    box-shadow: 0 0 32px 4px rgba(0,0,0,0.2);
+    font-family: 'Source Sans Pro', sans-serif;
+    width: auto;
+    display: flex;
+    
+}
+.audioPlayer canvas {
+    flex: 2;
+    width: 100%;
+    background-color: black;
+}
+.playlist {
+    background: linear-gradient(270deg, rgba(0,0,0,0.6) 0%, rgba(55,55,55,0.6) 64%), url('img/beige-paper.png');
+    display: flex;
+    flex-direction: column;
+    
+}
+.audioPlayer a {
+    
+    padding: .75rem 2.5rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+}
+.audioPlayer a, .audioPlayer i { 
+    font-size: 1rem;
+    margin-right: .5rem;
+}
+.audioPlayer a:hover {
+    background-color: #fff;
+    color: #000;
+}

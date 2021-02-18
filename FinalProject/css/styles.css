@@ -1,0 +1,141 @@
+/* Global */
+
+body {
+  color: #343434;
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 17px;
+  line-height: 1.4;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: x-large;
+}
+h3 {
+  font-size: large;
+  text-align: center;
+}
+.flex-container {
+  display: flex;
+}
+
+.flex-child {
+  flex: 1;
+  /* border: 2px solid rgb(0, 0, 0); */
+  /* box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); */
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.flex-child:first-child {
+  margin-right: 20px;
+}
+/* Clock */
+
+.clock-content {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 200px;
+}
+
+.date,
+.time {
+  color: #bdc3c7;
+  font-weight: 300;
+  font-size: 1em;
+  /* padding: 20px; */
+}
+
+.date {
+  border-bottom: 2px solid #eee;
+}
+
+.time {
+  font-size: 1em;
+  margin: 0;
+}
+
+/* Nav */
+.nav-tainer {
+  display: flexbox;
+}
+nav {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+nav a:link {
+  text-decoration: none;
+  /* padding: 2rem; */
+  color: #181515cb;
+}
+
+nav a:visited {
+  text-decoration: none;
+  color: #181515cb;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a:active {
+  text-decoration: underline;
+}
+/* Header */
+header h1 {
+  text-align: center;
+}
+header h2 {
+  font-size: large;
+}
+/* Projects */
+
+/* Work */
+
+/* Education */
+
+/* Footer */
+footer {
+  background: linear-gradient(270deg, rgba(0,0,0,0.6) 0%, rgba(55,55,55,0.6) 64%), url('img/beige-paper.png');
+  display: grid;
+  
+}
+footer h2 {
+  text-align: center;
+}
+.contact-link {
+  margin: 1rem;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  padding: 1rem;
+}
+.fa {
+  /* padding: 20px; */
+  /* font-size: 30px; */
+  /* width: 30px; */
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+/* linked In */
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+/* google */
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}

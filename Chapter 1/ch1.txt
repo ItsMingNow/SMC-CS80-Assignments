@@ -1,0 +1,41 @@
+Chapter 1 Assignment
+
+1.6 Fill in the blanks in each of the following statements: 
+      a) The process of instructing the computer to solve a problem is called programming. 
+      b) What type of computer language uses Englishlike abbreviations for machine-language instructions? Assembly languages. 
+      c) The level of computer language at which it’s most convenient for you to write programs quickly and easily is high-level languages. 
+      d) The only language that a computer directly understands is called that computer's machine language. 
+      e) Web 2.0 embraces an architecture of participation —a design that encourages user interaction and community contributions. 
+      f) Collective intelligence is the concept that a large, diverse group of people will create smart ideas. 
+
+1.7 Fill in the blanks in each of the following statements: 
+      a) Java is now used to develop large-scale enterprise applications, to enhance the functionality of web servers, to provide applications for consumer devices and for many other purposes. 
+      b) C initially became widely known as the development language of the UNIX operating system. 
+      c) The C++ programming language was developed by Bjarne Stroustrup in the early 1980s at Bell Laboratories. 
+ 1.9 Fill in the blanks in each of the following statements: 
+      a) IPv6 is the next-generation Internet Protocol that features built-in security and a new addressing scheme, significantly expanding the number of addresses available. 
+      b) HTML documents normally contain hyperlinks, which, when clicked, load a specified web document. 
+      c) A URL contains information that directs a browser to the resource that the user wishes to access; Web servers make such resources available to web clients. 
+      d) The two most common HTTP request types are get and post.  
+      e) Web-based applications are multitier applications. The bottom tier(also called the data tier or the information tier) maintains the application’s data and typically stores data in a relational database management system. The middle tier implements business logic, controller logic and presentation logic to control interactions between the application’s clients and its data. The top tier, or client tier, is the application’s user interface, which gathers input and displays output. 
+       f) Android, the fastest growing mobile and smartphone operating system. is based on the Linux kernel and Java. 
+ 1.11 Describe the difference between client-side programming and server-side programming. 
+
+Client-side programming is less flexible than server-side programming. Client-side programming deals with code that will run on the client and server-side programming deals with code that will run on the server.
+ 1.13 (Cloud Computing) Describe three benefits of the cloud computing model. 
+
+1. Accessed remote and available on demand 
+2. Allows you to increase or decrease resources at any given time
+3. Generally more cost effective
+
+1.17 (Watch as an Object) You’re probably wearing on your wrist one of the world’s most com- mon types of objects—a watch. Discuss how each of the following terms and concepts applies to the notion of a watch: object, attributes, behaviors, class, inheritance (consider, for example, an alarm clock), abstraction, encapsulation, interface and information hiding
+
+Object - Watch Case
+Attribute - Size, color, movement, material, glass. These define the object.
+Behavior - Calculates time, counts seconds, minutes and hours. How to object operates.
+Class - 
+Inheritance - pocket watch
+Abstraction -
+Encapsulation -
+Interface - Dials, how the user can change the object’s time.
+Information Hiding - Backplate, most times on a watch the backplate blocks the view of the movement of the watch “hiding” the mechanism of how the watch counts time.
